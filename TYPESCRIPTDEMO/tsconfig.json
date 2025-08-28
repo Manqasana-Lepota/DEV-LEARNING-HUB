@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es2015",              // JS version output
+    "module": "commonjs",            // Node.js module system
+    "rootDir": "./src",              // where your TS files are
+    "outDir": "./dist",              // compiled JS goes here
+    "strict": true,                  // enable strict checks
+    "esModuleInterop": true,         // allow import/export compatibility
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*"],           // look for .ts files in /src
+  "exclude": ["node_modules"]        // ignore node_modules
+}
