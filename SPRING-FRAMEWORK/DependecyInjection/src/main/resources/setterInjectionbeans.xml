@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context
+		https://www.springframework.org/schema/context/spring-context.xsd">
+
+   <bean id="student" class="com.learning.setterinjection.Student">
+       <property name="studentId" value="0012025"/>
+       <property name="firstName" value="Manqasana"/>
+       <property name="lastName" value="Lepota"/>
+       <property name="age" value="25"/>
+       <property name="course" value="Information Technology"/>
+   </bean>
+
+    <bean id="student1" class="com.learning.setterinjection.Student">
+        <property name="studentId" value="0022025"/>
+        <property name="firstName" value="Lusanda"/>
+        <property name="lastName" value="Mzangwe"/>
+        <property name="age" value="23"/>
+        <property name="course" value="Electrical Engineering"/>
+    </bean>
+
+</beans>
