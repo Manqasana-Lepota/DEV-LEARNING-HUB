@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="addressBean" class="com.learning.objecttype.setterinjection.Address" >
+        <property name="city" value="Durban" />
+        <property name="country" value="South Africa" />
+    </bean>
+
+    <bean id="stud" class="com.learning.objecttype.setterinjection.Student" >
+        <property name="id" value="102" />
+        <property name="name" value="Lusanda Mzangwe" />
+        <property name="address" ref="addressBean" />
+    </bean>
+</beans>
