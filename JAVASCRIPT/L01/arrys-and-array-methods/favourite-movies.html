@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Array Methods</title>
+</head>
+<body>
+    <h2>My Favorite Movies</h2>
+    <script>
+
+        // Creating an array
+        var movies = ["Cooked", "Chasing the Wind", "Bad Influence", "She Said Maybe","Abandoned Man"];
+
+        // Displaying list of movies
+        document.write("<h3>Original Movie List:</h3>");
+        document.write(movies.join(", ") + "<br><br>");
+
+        // Adding new movie to the list
+        movies.push("Duplicity");
+        document.write("<strong>After adding one movie:</strong><br><br>");
+        document.write(movies.join(", ") + "<br><br>");
+
+        // Removing the first movie
+        movies.shift();
+        document.write("<strong>After removing the first movie:</strong><br><br>");
+        document.write(movies.join(", ") + "<br><br>");
+
+        // Sorting the list
+        movies.sort();
+        document.write("<strong>After sorting the movies:</strong><br><br>");
+        document.write(movies.join(", ") + "<br><br>");
+
+        // Reversing the list
+        movies.reverse();
+        document.write("<strong>After reversing the movies:</strong><br><br>");
+        document.write(movies.join(", ") + "<br><br>");
+
+        // howing the first movie using prototype property
+        Array.prototype.showFirstMovie = function() {
+            return this[0];
+        };
+        document.write("<strong>First movie in the list (using prototype method):</strong><br><br>");
+        document.write(movies.showFirstMovie() + "<br><br>");
+
+        // Showing the number of movies
+        document.write("<strong>Total movies:</strong> " + movies.length);
+
+    </script>
+</body>
+</html>

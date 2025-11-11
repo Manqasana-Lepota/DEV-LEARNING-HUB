@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function That Return Value</title>
+</head>
+<body>
+    <script>
+        function returnSum(first, second) 
+        {
+            var sum = first + second;
+            return sum;
+        }
+        var firstNo = parseInt(prompt("Enter first number"));
+        var seconNo = parseInt(prompt("Enter second number"));
+
+        document.write(firstNo + " + " + seconNo + " = " + returnSum(firstNo,seconNo));
+    </script>
+</body>
+</html>

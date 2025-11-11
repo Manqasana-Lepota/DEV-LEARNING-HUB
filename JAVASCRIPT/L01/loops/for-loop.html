@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop</title>
+</head>
+<body>
+    <script>
+
+        var students = new Array("Tom", "Tim", "Toto", "Tobi", "Thabo","Themba");
+        document.write("<h2>Displaying Student Name Using for loop:</h2>")
+        for (let i = 0; i < students.length; i++) {
+            document.write(students[i] + "<br>");
+        }
+
+
+        document.write("<h2>Diplaying a triangle:</h2><br>")
+        for (let i = 1; i <=5; i++) {
+            for (let j = 1; j <= i; j++) {
+                document.write("* ");
+            }
+            document.write("<br/>");
+        }
+    </script>
+</body>
+</html>

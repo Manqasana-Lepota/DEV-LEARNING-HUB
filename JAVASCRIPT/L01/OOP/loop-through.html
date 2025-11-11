@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop Through the Properties of an Object</title>
+</head>
+<body>
+    <script>
+        var employee = {firstName: "John", lastName: "Smith", department: "Accounts"};
+        var details = "";
+        document.write("<b>Using for/in loops </b><br />");
+        for(var x in employee) {
+            details = x + ": " + employee[x];
+            document.write(details + "<br />");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How To Create object</title>
+</head>
+<body>
+    <script>
+        var student = new Object();
+        student.fName = "John";
+        student.lName = "Smith";
+        student.id = 5;
+        student.markE = 76;
+        student.markM = 99;
+        student.markS = 87;
+        student.calculateAverage = function() {
+            return (student.markE + student.markM + student.markS)/3;
+        };
+        student.displayDetails = function() {
+            document.write("Student Id: " + student.id + "<br />");
+            document.write("Name: " + student.fName + " " + student.lName + "<br />");
+            var avg = student.calculateAverage();
+            document.write("Average Marks: " + avg);
+        };
+        student.displayDetails()
+    </script>
+</body>
+</html>
